@@ -55,7 +55,7 @@
     /* NOTIS */
     .noti{
         background-color: rgb(65, 63, 63);
-        height: 500px; 
+        height: 300px; 
         margin: 20px 20px 40px 20px;
         display: flex;
         flex-direction: column-reverse;    
@@ -64,14 +64,15 @@
         opacity: 0.8;
         transition: 1s;
     }
-    .noti h2,h3{
-        color: rgb(255, 255, 255);
-    }
     .noti h3{
-        margin: 0px 30px 0px 30px;
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+        margin: 0px 10px 0px 10px;
     }
     .noti h2{
-        margin: 0px 30px 30px 30px;
+        font-size: 1.3em;
+        color: rgb(255, 255, 255);
+        margin: 0px 10px 30px 10px;
     }
     /* FOOTER */
     footer{
@@ -118,9 +119,7 @@
         transition: 1s;
     }
     .nav-footer{
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 1.5em;
+        font-size: 1em;
         color: blueviolet;
         text-align: center;
     }
@@ -137,7 +136,7 @@
     }
     .copyright p{
         color: #fff;
-        font-size: 1.5em;
+        font-size: 1em;
         text-align: center;
     }
 }
