@@ -10,11 +10,11 @@
         margin: 10px 0 0 10px;
     }
     .logo-img{
-        max-width: 60px;
+        max-width: 50px;
     }
     .logo-nombre{
         margin: 0 0 0 10px;
-        font-size: 2em;
+        font-size: 1em;
         font-weight: 700;
     }
     .hamburga{
