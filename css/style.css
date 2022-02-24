@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 991px){
+    /* HEADER & NAV */
+    .logo{
+        margin: 10px 0 0 10px;
+    }
+    .logo-img{
+        max-width: 60px;
+    }
+    .logo-nombre{
+        margin: 0 0 0 10px;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .hamburga{
+        margin: 0 10px 0 0;
+    }
+    .menu-ul{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .menu-ul li:hover{
+        opacity: 0.8;
+        transition: 1s;
+    }
+    .menu-boton{
+        margin: auto;
+        margin-top: 10px;
+        width: 300px;
+        font-size: 1em;
+        text-align: center;
+    }
+    .menu-redes{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .redes-ico{
+        font-size: 1.8em;
+        margin: 3px;
+        color: #fff;
+        background-color: blueviolet;
+        border-radius: 150px;
+        border: 1px solid blueviolet;
+        padding: 10px;
+    }
+    .redes-ico:hover{
+        font-size: 2.2em;
+        transition: 1s;
+    }
+    /* NOTIS */
+    .noti{
+        background-color: rgb(65, 63, 63);
+        height: 500px; 
+        margin: 20px 20px 40px 20px;
+        display: flex;
+        flex-direction: column-reverse;    
+    }
+    .noti:hover{
+        opacity: 0.8;
+        transition: 1s;
+    }
+    .noti h2,h3{
+        color: rgb(255, 255, 255);
+    }
+    .noti h3{
+        margin: 0px 30px 0px 30px;
+    }
+    .noti h2{
+        margin: 0px 30px 30px 30px;
+    }
+    /* FOOTER */
+    footer{
+        background-color: rgb(174, 172, 175);
+        padding-top: 30px;
+    }
+    .logof-caja{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .logof-img{
+        max-width: 60px;
+    }
+    .logof-nombre{
+        margin: 0 0 0 10px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .logof-nombre:hover{
+        opacity: 0.8;
+        transition: 1s;
+    }
+    .redes-footer{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .redes-ico-footer{
+        font-size: 1.5em;
+        color: #fff;
+        background-color: blueviolet;
+        border-radius: 150px;
+        border: 1px solid blueviolet;
+        padding: 5px;
+        margin-left: 5px;
+    }
+    .redes-ico-footer:hover{
+        opacity: 0.8;
+        transition: 1s;
+    }
+    .nav-footer{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1.5em;
+        color: blueviolet;
+        text-align: center;
+    }
+    .nav-footer a{
+        text-decoration: none;
+        color: blueviolet;
+    }
+    .nav-footer a:hover{
+        opacity: 0.8;
+        transition: 1s;
+    }
+    .copyright{
+        padding: 50px 0 20px 0 ;
+    }
+    .copyright p{
+        color: #fff;
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    /* HEADER & NAV */
+    .header{
+        height: 90px;
+        background-color: #fff;
+        position:fixed;
+        z-index: 1;
+        margin-top: 50px;
+    }
+    .logo{
+        width: 300px;
+        height: 50px;
+        position: absolute;
+        top:0px;
+        right:0;
+        bottom: 0;
+        left:0;
+        margin: auto;
+    }
+    .logo-img{
+        max-width: 40px;
+    }
+    .logo-nombre{
+        margin: 0 0 0 10px;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .menu-ul{
+        position:absolute;
+        top: 80px;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 250px 0 250px;
+        align-items: center;
+        background-color: blueviolet;
+        font-size: 0.8em;   
+    }
+    .menu-ul a{
+        color: #fff;
+    }
+    .menu-ul li:hover{
+        opacity: 0.8;
+        transition: 1s;
+    }
+    .menu-boton{
+        position: absolute;
+        top: 35px;
+        right:80px;
+        bottom: 20px;
+        width: 170px;
+        height: 25px;
+        font-size: .7em;
+        text-align: center;
+    }
+    .menu-redes{
+        position:absolute;
+        top: 35px;
+        right: 0;
+        bottom: 0;
+        left: 80px;
+    }
+    .redes-ico{
+        font-size: 1em;
+        margin: 0 3px 0 3px;
+        color: #fff;
+        background-color: blueviolet;
+        border-radius: 70px;
+        border: 1px solid blueviolet;
+        padding: 5px;
+    }
+    .redes-ico:hover{
+        font-size: 1.2em;
+        transition: .3s;
+    }
+    /* NOTIS */
+    .noticias{
+        margin-top: 90px;
+        margin-bottom: 40px;
+        margin-left: 80px;
+        margin-right: 80px;
+        display: grid;
+        gap: 10px;
+    }
+    .noti{
+        background-color: rgb(65, 63, 63);
+        display: flex;
+        flex-direction: column-reverse;    
+    }
+    .noti:hover{
+        opacity: 0.8;
+        transition: 1s;
+    }
+    .noti h2,h3{
+        color: rgb(255, 255, 255);
+    }
+    .noti-1{
+        grid-column: 1/4;
+        grid-row: 1;
+        height: 350px;
+    }
+    .noti-1 h3{
+        margin: 0px 30px 0px 30px;
+        font-size: 1em;
+    }
+    .noti-1 h2{
+        margin: 0px 30px 30px 30px;
+        font-size: 1.5em;
+    }
+    .noti-2{
+        grid-column:1/3;
+        grid-row: 2/4;
+        height: 410px;
+    }
+    .noti-2 h3{
+        margin: 0px 30px 0px 30px;
+        font-size: .8em;
+    }
+    .noti-2 h2{
+        margin: 0px 30px 30px 30px;
+        font-size: 1.2em;
+    }
+    .noti-3{
+        grid-column:3/4;
+        grid-row: 2;
+        height: 200px;
+    }
+    .noti-4{
+        grid-column:3/4;
+        grid-row: 3;
+        height: 200px;        
+    }
+    .noti-3 h3,.noti-4 h3{
+        margin: 0px 10px 0px 10px;
+        font-size: .6em;
+    }
+    .noti-3 h2,.noti-4 h2{
+        margin: 0px 10px 10px 10px;
+        font-size: .9em;
+    }
+    .noti-5, .noti-6, .noti-7, .noti-8, .noti-9, .noti-10{
+        height: 200px;
+    }
+    .noti-5 h3, .noti-6 h3, .noti-7 h3, .noti-8 h3, .noti-9 h3, .noti-10 h3{
+        margin: 0px 10px 0px 10px;
+        font-size: .6em;
+    }
+    .noti-5 h2, .noti-6 h2, .noti-7 h2, .noti-8 h2, .noti-9 h2, .noti-10 h2{
+        margin: 0px 10px 10px 10px;
+        font-size: .9em;
+    }
+    /* FOOTER */
+    footer{
+        background-color: rgb(174, 172, 175);
+        padding: 30px 80px 20px 80px;
+    }
+    .logof-caja{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+        .logof-img{
+            max-width: 60px;
+        }
+        .logof-nombre{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+        .logof-nombre:hover{
+            opacity: 0.8;
+            transition: 1s;
+        }
+    .redes-footer{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+        .redes-ico-footer{
+            font-size: 2em;
+            color: #fff;
+            background-color: blueviolet;
+            border-radius: 150px;
+            border: 1px solid blueviolet;
+            padding: 5px;
+            margin-left:5px;
+        }
+        .redes-ico-footer:hover{
+            opacity: 0.8;
+            transition: 1s;
+        }
+    .nav-footer{
+        text-align: center;
+        font-size: 1.5em;
+        color: blueviolet;
+        margin-bottom: 30px;
+    }
+        .nav-footer a{
+            text-decoration: none;
+            color: blueviolet;
+        }
+        .nav-footer a:hover{
+            opacity: 0.8;
+            transition: 1s;
+        }
+    .copyright p{
+        color: #fff;
+        font-size: 1em;
+        text-align: center;
+    }
+}
