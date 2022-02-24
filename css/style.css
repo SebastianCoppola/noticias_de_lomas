@@ -20,6 +20,9 @@
     .hamburga{
         margin: 0 10px 0 0;
     }
+    .hamburga span{
+        font-size: 1em;
+    }
     .menu-ul{
         text-align: center;
         margin-top: 10px;
