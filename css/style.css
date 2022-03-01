@@ -79,11 +79,11 @@ a{
     }
     /* NOTIS */
     .noticias{
-        margin-top: 10px;
+        margin-top: 50px;
     }
     
     .noti{
-        margin: 40px 20px 40px 20px;
+        margin: 20px 20px 0px 20px;
         min-height: 300px;
     }
     .noti:hover{
@@ -97,7 +97,8 @@ a{
         position: relative;
     }
     .noti-img img{
-        max-width: 100%;
+        width: 100%;
+        max-height: 270px;
         object-fit: cover;
         object-position: top;
     }
@@ -116,8 +117,8 @@ a{
         width: 83%;
         position: relative;
         margin: auto;
-        padding-top: 20px;
-        padding-bottom: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         overflow: hidden;
     }
     .noti-texto h2{
