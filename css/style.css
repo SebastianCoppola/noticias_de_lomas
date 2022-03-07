@@ -10,10 +10,7 @@ a{
 
 @media only screen and (max-width: 991px){
     /* HEADER & NAV */
-    .fecha{
-        display:none;
-    }
-    .fecha-dire-redes{
+    .fecha-dire{
         display: none;
     }
     .menciones{
@@ -52,9 +49,12 @@ a{
         color: #fff;
     }
     .hamburga{
-        margin-right: 10px;
+        position: absolute;
+        top:40px;
+        right:30px;
+        
         width: 50px;
-        text-align: center;
+
     }
     .hamburga span{
         font-size: .8em;
@@ -69,13 +69,10 @@ a{
         opacity: 0.5;
         transition: 1s;
     }
-    .menu-boton{
-        margin: auto;
-        margin-top: 30px;
-        width: 300px;
-        font-size: 1em;
-        text-align: center;
+    .logo-en-nav{
+        display: none;
     }
+
     .nav-fecha-dire-redes{
         margin-top: 50px;
         margin-bottom: 20px;
@@ -239,59 +236,34 @@ a{
         width: 100vw;
         height: 230px;
         background-color: #216087;
-        position: fixed;
-        top:0;
-        z-index: 1;
+        margin: 0;
+        padding: 0;
+        
     }
     .header{
-        background-color: #216087;
-        position: fixed;
-        top:0;
-        right: 0;
-        left: 0;
-        margin: auto;
-        z-index: 1;
-        width: 85%;
+        position:relative;
+        width: 80vw;
         height: 230px;
+        background-color: #216087;
+        margin-top:0px;
+        margin-right: 0;
+        margin-left: 0;
+        margin: auto;
     }
-    .fecha{
-        background-color:#ffffff;
-        height: 30px;
-        width: 100vw;
-        position: absolute;
-        top:0;
-        z-index: 2;
-        text-align: center;
-        color: #216087s;
-    }
-    .fecha-dire-redes{
+    .fecha-dire{
         position: absolute;
         top:60px;
-        left: 0;
         text-align: center;
         margin: 0 0 0 0;
     }
-    .fecha-dire-redes p{
+    .fecha-dire p{
         color: #fff;
         padding: 0;
-        margin: 0;
-    }
-    .redes-ico{
-        font-size: 1.5em;
-        margin: 0px 5px 12px 5px;
-        color: #216087;
-        background-color: #fff;
-        border-radius: 70px;
-        border: 1px solid #fff;
-        padding: 7px;
-    }
-    .redes-ico:hover{
-        opacity: .5;
-        transition: .3s;
+        margin:0;
     }
     .logo{
         position: absolute;
-        top:40px;
+        top:30px;
         left: 0;
         right: 0;
         margin: auto;
@@ -300,7 +272,7 @@ a{
         align-items: center;
     }
     .logo-img{
-        max-width: 110px;
+        max-width: 100px;
     }
     .logo-nombre-peque-1, .logo-nombre-peque-2{
         display:none;
@@ -308,30 +280,33 @@ a{
     .logo-nombre{
         margin: 30px 0 0 10px;
         font-size: 1.8em;
-        color: #fff  !important;
+        color: #fff;
     }
     .logo-subt{
         font-size: 1em;
         color:#fff;
         text-align: end;
-        margin-right: 40px;
+        padding-right: 40px;
     }
     .menciones{
         position: absolute;
-        top:30px;
+        top:0;
         right:0;
         margin: auto;
         text-align: center;
     }
     .menciones img{
-        width: 50%;
+        width: 60%;
     }
-    .menu-ul{
+    .menu{
         position:absolute;
         top: 195px;
         left: 100px;
         right: 100px;
-        margin: auto;        
+        margin: auto;     
+    }
+    .menu-ul{
+        width: 100%;
         height: 25px;
         display: flex;
         justify-content: space-between;
@@ -347,15 +322,48 @@ a{
         opacity: 0.5;
         transition: 1s;
     }
-    .nav-fecha-dire-redes{
+    .redes-ico{
+        font-size: 1.5em;
+        margin: 0px 5px 12px 5px;
+        color: #216087;
+        background-color: #fff;
+        border-radius: 50px;
+        border: 1px solid #fff;
+        padding: 7px;
+    }
+    .nav-fecha-dire{
         display:none;
     }
+
+    .menu.active{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100vw;
+        background-color: #216087;
+        z-index: 1; 
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .logo-en-nav{
+        width: 60px;
+        display: none;
+    }
+    .logo-en-nav img{
+        width: 100%;
+    }
+    .logo-en-nav.active{
+        display:inline;
+    }
+
 
 
     /* NOTIS */
     .noticias{
         width: 75%;
-        margin: 250px auto;
+        margin: 30px auto;
         display: grid;
         gap: 20px;
     }

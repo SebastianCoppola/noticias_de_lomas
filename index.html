@@ -18,20 +18,14 @@
 <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark nav-header">
-        <div class="fecha">
-            <p class=""><I>Febrero 2020</I></p>
-        </div>
         <div class="container-fluid header">
-            <div class="fecha-dire-redes col-lg-3">
-                <a href="#"><i class="fab fa-instagram redes-ico"></i></a>
-                <a href="#"><i class="fab fa-twitter redes-ico"></i></a>
-                <a href="#"><i class="fab fa-facebook redes-ico"></i></a>
+            <div class="fecha-dire col-lg-3">
                 <p class="dire">Director: Hugo Bento</p>
-                <!--<p class="fecha"><I>Febrero 2020</I></p>-->
+                <p class="fecha"><I>Febrero 2020</I></p>
             </div>
             <div class="col-lg-6">
                 <a class="logo" href="#">
-                    <img class="logo-img img-fluid" src="img/logo.png" alt="noticiasdelomas">
+                    <img class="logo-img img-fluid" src="img/logo2.png" alt="noticiasdelomas">
                     <div>
                         <h1 class="logo-nombre ">NOTICIAS DE LOMAS DE ZAMORA</h1>
                         <p class="logo-subt">El ojo insomne del Conurbano Sur</p>
@@ -47,9 +41,12 @@
             <button class="hamburga navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            </br>
             <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="menu-ul navbar-nav">
+                    <li class="nav-item logo-en-nav">
+                        <a class="nav-link" href="#"><img src="img/logo2.png"></a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">INICIO</a>
                     </li>
@@ -77,9 +74,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONTACTO</a>
                     </li>
-                    <li class="nav-item nav-fecha-dire-redes">
+                    <li class="nav-fecha-dire">
                         <p class="menu-fecha"><i>Febrero 2020</i></p>
                         <p class="menu-dire">Director: Hugo Bento</p>
+                    </li>
+                    <li class="nav-item nav-redes">
                         <a href="#"><i class="fab fa-instagram redes-ico"></i></a>
                         <a href="#"><i class="fab fa-twitter redes-ico"></i></a>
                         <a href="#"><i class="fab fa-facebook redes-ico"></i></a>
@@ -93,6 +92,7 @@
             </div>
         </div>
     </nav>
+
 
     <section class="noticias">
 
@@ -288,6 +288,8 @@
     </footer>
 
 
+    <!--JS-->
+    <script src="js/index.js"></script>
     <!-- jquery -->
     <script src="integrar-bp/js/jquery-3.6.0.min.js"></script>
     <!-- popper -->
