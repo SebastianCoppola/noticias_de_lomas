@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Martel', serif;
+    font-family: 'Playfair Display', serif;
 }
 a{
     text-decoration: none;
@@ -10,33 +10,52 @@ a{
 
 @media only screen and (max-width: 991px){
     /* HEADER & NAV */
+    .fecha{
+        display:none;
+    }
+    .fecha-dire-redes{
+        display: none;
+    }
+    .menciones{
+        display: none;
+    }
+    .nav-header{
+        background-color: #216087;
+    }
     .logo{
         margin: 10px 10px 10px 10px;
+        display: flex;
+        align-items: center;
     }
     .logo-a{
         text-decoration: none;
     }
     .logo-img{
-        max-width: 35px;
+        max-width: 70px;
     }
     .logo-nombre{
-        font-family: 'Bree Serif', serif;
-        margin: 0 0 0 6px;
-        font-size: 1.3em;
-        font-weight: 700;
+        display: none;
     }
     .logo-subt{
         display: none;
+    }
+    .logo-nombre-peque-1{
+        margin: 0 0 0 20px;
+        font-size: 1.8em;
+        font-weight: 500;
+        color: #fff;
+    }
+    .logo-nombre-peque-2{
+        margin: 0 0 0 20px;
+        font-size: 1.3em;
+        font-weight: 500;
+        color: #fff;
     }
     .hamburga{
         margin-right: 10px;
         width: 50px;
         text-align: center;
     }
-    .linea-lg{
-        display: none;
-    }
-    
     .hamburga span{
         font-size: .8em;
     }
@@ -44,13 +63,11 @@ a{
         text-align: center;
         margin-top: 40px;
         font-size: .8em;
+        color: #fff;
     }
     .menu-ul li:hover{
-        opacity: 0.8;
+        opacity: 0.5;
         transition: 1s;
-    }
-    .menu-fecha{
-        display: none;
     }
     .menu-boton{
         margin: auto;
@@ -59,7 +76,7 @@ a{
         font-size: 1em;
         text-align: center;
     }
-    .menu-redes{
+    .nav-fecha-dire-redes{
         margin-top: 50px;
         margin-bottom: 20px;
         text-align: center;
@@ -67,10 +84,10 @@ a{
     .redes-ico{
         font-size: 1.6em;
         margin: 3px;
-        color: #fff;
-        background-color: #801c7f;
+        color: #216087;
+        background-color: #fff;
         border-radius: 150px;
-        border: 1px solid #801c7f;
+        border: 1px solid #fff;
         padding: 5px;
     }
     .redes-ico:hover{
@@ -99,12 +116,12 @@ a{
     .noti-img img{
         width: 100%;
         max-height: 270px;
-        object-fit: cover;
-        object-position: top;
+        object-fit: contain;
+        object-position: center;
     }
     .noti-img h4{
         display: inline;
-        background-color: #801c7f;
+        background-color: #216087;
         border-radius: 10%;
         padding:5px;
         font-size: 1em;
@@ -123,22 +140,33 @@ a{
     }
     .noti-texto h2{
         font-size: 1.3em;
+        font-weight: 800;
+        color: black;
+        overflow: hidden;
+    }
+    .noti-texto p{
+        font-size: .9em;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
         color: black;
         overflow: hidden;
     }
     .noti-texto h3{
-        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: .9em;
         color: black;
         overflow: hidden;
     }
+
     /* FOOTER */
     footer{
         padding-top: 30px;
+        color: #216087;
     }
     .linea{
         height: 50px;
-        background-color: rgb(155, 153, 151);
-        border-color: rgb(155, 153, 151);
+        background-color: #216087;
+        border-color: #216087;
+        color: #216087;
     }
     .logof-caja{
         display: flex;
@@ -148,14 +176,13 @@ a{
         margin-top: 30px;
     }
     .logof-img{
-        max-width: 35px;
+        max-width: 60px;
     }
     .logof-nombre{
-        font-family: 'Bree Serif', serif;
         margin: 0 0 0 10px;
         text-decoration: none;
         color: black;
-        font-size: 1.5em;
+        font-size: 1.6em;
         font-weight: 700;
     }
     .logof-nombre:hover{
@@ -171,9 +198,9 @@ a{
     .redes-ico-footer{
         font-size: 1.5em;
         color: #fff;
-        background-color: #801c7f;
+        background-color:#216087;
         border-radius: 150px;
-        border: 1px solid #801c7f;
+        border: 1px solid #216087;
         padding: 5px;
         margin-left: 5px;
     }
@@ -185,12 +212,12 @@ a{
         margin-top: 30px;
         margin-bottom: 30px;
         font-size: 1em;
-        color: black;
+        color: #216087;
         text-align: center;
     }
     .nav-footer a{
         text-decoration: none;
-        color: black;
+        color: #216087;
     }
     .nav-footer a:hover{
         opacity: 0.8;
@@ -198,6 +225,7 @@ a{
     }
     .copyright{
         padding: 20px 0 20px 0 ;
+        color: #216087;
     }
     .copyright p{
         font-size: 1em;
@@ -207,107 +235,127 @@ a{
 
 @media only screen and (min-width: 992px){
     /* HEADER & NAV */
-    .header{
-        background-color: #fff;
-        position:fixed;
+    .navbar{
+        width: 100vw;
+        height: 230px;
+        background-color: #216087;
+        position: fixed;
         top:0;
         z-index: 1;
-        height: 200px;
+    }
+    .header{
+        background-color: #216087;
+        position: fixed;
+        top:0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        z-index: 1;
+        width: 85%;
+        height: 230px;
+    }
+    .fecha{
+        background-color:#ffffff;
+        height: 30px;
+        width: 100vw;
+        position: absolute;
+        top:0;
+        z-index: 2;
+        text-align: center;
+        color: #216087s;
+    }
+    .fecha-dire-redes{
+        position: absolute;
+        top:60px;
+        left: 0;
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+    .fecha-dire-redes p{
+        color: #fff;
+        padding: 0;
+        margin: 0;
+    }
+    .redes-ico{
+        font-size: 1.5em;
+        margin: 0px 5px 12px 5px;
+        color: #216087;
+        background-color: #fff;
+        border-radius: 70px;
+        border: 1px solid #fff;
+        padding: 7px;
+    }
+    .redes-ico:hover{
+        opacity: .5;
+        transition: .3s;
     }
     .logo{
-        width: 300px;
-        height: 50px;
         position: absolute;
-        top:50px;
-        right:0;
-        left:0;
+        top:40px;
+        left: 0;
+        right: 0;
         margin: auto;
-    }
-    .logo-a{
-        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .logo-img{
-        max-width: 40px;
+        max-width: 110px;
+    }
+    .logo-nombre-peque-1, .logo-nombre-peque-2{
+        display:none;
     }
     .logo-nombre{
-        font-family: 'Bree Serif', serif;
-        margin: 0 0 0 10px;
-        font-size: 1.5em;
-        font-weight: 700;
+        margin: 30px 0 0 10px;
+        font-size: 1.8em;
+        color: #fff  !important;
     }
     .logo-subt{
-        font-size: .6em;
-        margin-left: 65px;
-        margin-top: 5px;
-        font-style: italic;
+        font-size: 1em;
+        color:#fff;
+        text-align: end;
+        margin-right: 40px;
+    }
+    .menciones{
+        position: absolute;
+        top:30px;
+        right:0;
+        margin: auto;
+        text-align: center;
+    }
+    .menciones img{
+        width: 50%;
     }
     .menu-ul{
         position:absolute;
-        top: 160px;
-        left: 0;
-        z-index: 1;
-        width: 100vw;
+        top: 195px;
+        left: 100px;
+        right: 100px;
+        margin: auto;        
         height: 25px;
         display: flex;
         justify-content: space-between;
-        padding: 0 150px 0 150px;
+        padding: 0 0 0 0;
         align-items: center;
-        background-color: #fff;
-        font-size: 0.7em;   
+        font-size: 0.8em;   
     }
     .menu-ul a{
-        color: #fff;
+        color: #fff !important;
+        font-family: Arial, Helvetica, sans-serif !important;
     }
-    .menu-ul li:hover{
-        opacity: 0.8;
+    .menu-ul a:hover{
+        opacity: 0.5;
         transition: 1s;
     }
-    .menu-fecha{
-        position: absolute;
-        top: 60px;
-        right:80px;
-        bottom: 20px;
-        width: 170px;
-        height: 25px;
-        font-size: .6em;
-        text-align: center;
-        font-style: italic;
+    .nav-fecha-dire-redes{
+        display:none;
     }
-    .menu-boton{
-        position: absolute;
-        top: 80px;
-        right:80px;
-        bottom: 20px;
-        width: 170px;
-        height: 25px;
-        font-size: .7em;
-        text-align: center;
-    }
-    .menu-redes{
-        position:absolute;
-        top: 70px;
-        right: 0;
-        bottom: 0;
-        left: 80px;
-        max-width: 300px;
-    }
-    .redes-ico{
-        font-size: 1em;
-        margin: 0 3px 0 3px;
-        color: #fff;
-        background-color: #801c7f;
-        border-radius: 70px;
-        border: 1px solid #801c7f;
-        padding: 4px;
-    }
-    .redes-ico:hover{
-        font-size: 1.2em;
-        transition: .3s;
-    }
+
+
     /* NOTIS */
     .noticias{
         width: 75%;
-        margin: 200px auto;
+        margin: 250px auto;
         display: grid;
         gap: 20px;
     }
@@ -335,7 +383,7 @@ a{
     }
     .noti-img h4{
         display: inline;
-        background-color: #801c7f;
+        background-color:#216087;
         border-radius: 10%;
         padding:5px;
         font-size: 1em;
@@ -351,68 +399,158 @@ a{
         padding-top: 20px;
         overflow: hidden;
     }
-    .noti-texto h2{
-        font-size: 1.4em;
-        color: black;
-        overflow: hidden;
-    }
-    .noti-texto h3{
-        font-size: 1.2em;
-        color: black;
-        overflow: hidden;
+    .noti-texto h2, .noti-texto h3, .noti-texto p{
+        color: rgb(39, 39, 39);
     }
 
     .noti-1{
         grid-column: 1/4;
         grid-row: 1;
-    }
-    .noti-2{
-        grid-column:1/3;
-        grid-row: 2/4;
         height: 640px;
     }
-    .noti-2 .noti-img{
-        max-height:500px;
+    .noti-1 a {
+        height: 100%;
+        display:grid;
+        grid-template-columns: 35% 65%;
     }
-    .noti-2 h2{
+    .noti-1 .noti-img{
+        height: 100%;
+        max-height: 100%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .noti-1 .noti-texto{
+        height: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 60px 0 0;
+    }
+    .noti-1 .noti-texto h2{
+        font-size: 2.5em;
+        font-weight: 700;
+        margin-bottom: 30px;
+        font-family: 'Playfair Display', serif;
+    }
+    .noti-1 .noti-texto p{
+        font-family: Arial, Helvetica, sans-serif !important;
         font-size: 1.2em;
+        color: black;
     }
-    .noti-2 h3{
+    .noti-1 .noti-texto h3{
+        font-size: 1.5em;
+        font-family: 'Times New Roman', Times, serif;
+
+        
+    }
+
+    .noti-2, .noti-3, .noti-4{
+        height: 300px;
+    }
+    .noti-2 .noti-img, .noti-3 .noti-img, .noti-4 .noti-img{
+        height: 70%
+    }
+    .noti-2 .noti-texto, .noti-3 .noti-texto, .noti-4 .noti-texto{
+        height: 30%;
+    }
+    .noti-2 h2, .noti-3 h2, .noti-4 h2{
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+    .noti-2 h3, .noti-3 h3, .noti-4 h3{
         font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 500;
+
     }
-    .noti-3{
-        grid-column:3/4;
-        grid-row: 2;
-        height:300px;
+    .noti-4 .noti-img{
+        max-height: 100%;
+        height: 100%;
     }
-    .noti-4{
+    .noti-4 img{
+        object-fit: contain;
+    }
+
+    .noti-5{
+        grid-column:1/3;
+        grid-row: 3;
+        height: 640px;
+    }
+    .noti-5 .noti-img{
+        max-height:500px;
+        height: 75%;
+    }
+    .noti-5 .noti-texto{
+        max-height:500px;
+        height: 25%;
+    }
+    .noti-5 .noti-texto h2{
+        font-size: 1.7em;
+        font-weight: 800;
+        margin-bottom: 15px;
+        font-family: 'Playfair Display', serif;
+    }
+    .noti-5 .noti-texto p{
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 1em;
+        color: black;
+    }
+    .noti-5 .noti-texto h3{
+        font-size: 1.2em; 
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    .noti-6{
         grid-column:3/4;
         grid-row: 3;
-        height:300px;
+        height:100%
     }
-    .noti-3 > .noti-texto, .noti-4 > .noti-texto{
+    .noti-6 .noti-img{
+        max-height: 100%;
+        height: 100%;
+    }
+    .noti-6 .noti-img img{
+        object-fit: cover;
+    }
+    .noti-6 > .noti-texto{
         height:15%;
         padding-top: 15px;
     }
-    .noti-3 h2, .noti-4 h2{
+    .noti-6 h2{
         font-size: .9em;
     }
-    .noti-3 h3, .noti-4 h3{
+    .noti-6 h3{
         font-size: .7em;
     }
-    .noti-5, .noti-6, .noti-7, .noti-8, .noti-9, .noti-10{
+
+    .noti-7, .noti-8, .noti-9, .noti-10, .noti-11, .noti-12, .noti-13, .noti-14, .noti-15{
         height: 300px;
     }
-    .noti-5 h2, .noti-6 h2, .noti-7 h2, .noti-8 h2, .noti-9 h2, .noti-10 h2{
+    .noti-7 .noti-img, .noti-8 .noti-img, .noti-9 .noti-img, .noti-10 .noti-img, .noti-11 .noti-img, .noti-12 .noti-img, .noti-13 .noti-img, .noti-14 .noti-img, .noti-15 .noti-img{
+        height: 70%;
+        overflow: hidden;
+    }
+    .noti-7 .noti-texto, .noti-8 .noti-texto, .noti-9 .noti-texto, .noti-10 .noti-texto, .noti-11 .noti-texto, .noti-12 .noti-texto, .noti-13 .noti-texto, .noti-14 .noti-texto, .noti-15 .noti-texto{
+        height: 30%;
+        overflow: hidden;
+    }
+    .noti-7 h2, .noti-8 h2, .noti-9 h2, .noti-10 h2, .noti-11 h2, .noti-12 h2, .noti-13 h2, .noti-14 h2, .noti-15 h2{
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+    .noti-7 h3, .noti-8 h3, .noti-9 h3, .noti-10 h3, .noti-11 h3, .noti-12 h3, .noti-13 h3, .noti-14 h3, .noti-15 h3{
         font-size: .9em;
+        font-family: 'Times New Roman', Times, serif ;
     }
-    .noti-5 h3, .noti-6 h3, .noti-7 h3, .noti-8 h3, .noti-9 h3, .noti-10 h3{
-        font-size: .7em;
-    }
+
     /* FOOTER */
     footer{
-        /*background-color: rgb(174, 172, 175);*/
         padding: 30px 80px 20px 80px;
+    }
+    .linea{
+        color: #216087;
     }
     .logof-caja{
         display: flex;
@@ -425,7 +563,7 @@ a{
         }
         .logof-nombre{
             text-decoration: none;
-            color: black;
+            color: #216087;
             font-size: 1.5em;
             font-weight: 700;
             padding-left: 10px;
@@ -443,32 +581,33 @@ a{
         .redes-ico-footer{
             font-size: 2em;
             color: #fff;
-            background-color: #801c7f;
+            background-color: #216087;
             border-radius: 150px;
-            border: 1px solid #801c7f;
+            border: 1px solid #216087;
             padding: 5px;
             margin-left:5px;
         }
         .redes-ico-footer:hover{
-            opacity: 0.8;
+            opacity: 0.5;
             transition: 1s;
         }
     .nav-footer{
         text-align: center;
         font-size: 1em;
-        color: #801c7f;
+        color: #216087;
         margin-top: 30px;
         margin-bottom: 30px;
     }
         .nav-footer a{
             text-decoration: none;
-            color: blueviolet;
+            color: #216087;
         }
         .nav-footer a:hover{
             opacity: 0.8;
             transition: 1s;
         }
     .copyright p{
+        color: #216087;
         font-size: 1em;
         text-align: center;
         margin-top: 30px;
