@@ -94,7 +94,6 @@ a{
     
     
     /* NOTIS */
-    
     .noticia{
         width: 90%;
         margin-top: 50px;
@@ -134,10 +133,6 @@ a{
     }
 
 
-
-
-
-
     /* FOOTER */
     footer{
         padding-top: 30px;
@@ -155,7 +150,6 @@ a{
         align-items: center;
         margin-bottom: 60px;
         margin-top: 30px;
-
     }
     .logof-img{
         max-width: 80px;
