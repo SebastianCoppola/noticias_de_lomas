@@ -235,7 +235,7 @@ a{
 @media only screen and (min-width: 992px){
     /* HEADER & NAV */
     .navbar{
-        width: 100vw;
+        width: 100%;
         height: 230px;
         background-color: #216087;
         margin: 0;
@@ -559,6 +559,12 @@ a{
     /* FOOTER */
     footer{
         padding: 30px 80px 20px 80px;
+    }
+    .footer{
+        width:80%;
+        margin-left: 0;
+        margin-right: 0;
+        margin:auto;
     }
     .linea{
         color: #216087;
