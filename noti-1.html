@@ -4,33 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias de Lomas - Noti-1</title>
+    <title>Noticias de Lomas - Home</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="integrar-bp/css/bootstrap.min.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/noti-1.css">
+    <link rel="stylesheet" href="css/style-noti.css">
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Martel:wght@200&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Martel:wght@200&family=Playfair+Display&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark nav-header">
         <div class="container-fluid header">
-            <div class="logo logo-caja ">
-                <a class="logo-a d-flex align-items-center" href="index.html">
-                    <img class="logo-img img-fluid" src="img/logo.png" alt="noticiasdelomas">
-                    <h1 class="logo-nombre navbar-brand">NOTICIAS DE LOMAS</h1>
+            <div class="fecha-dire col-lg-3">
+                <p class="dire">Director: Hugo Bento</p>
+                <p class="fecha"><I>Febrero 2020</I></p>
+            </div>
+            <div class="col-lg-6">
+                <a class="logo" href="#">
+                    <img class="logo-img img-fluid" src="img/logo2.png" alt="noticiasdelomas">
+                    <div>
+                        <h1 class="logo-nombre ">NOTICIAS DE LOMAS DE ZAMORA</h1>
+                        <p class="logo-subt">El ojo insomne del Conurbano Sur</p>
+                        <h1 class="logo-nombre-peque-1">NOTICIAS DE</h1> 
+                        <h2 class="logo-nombre-peque-2">LOMAS DE ZAMORA</h2>
+                    </div>
                 </a>
-                <h2 class="logo-subt">El ojo insomne del CONURBANO SUR</h2>
+            </div>
+            <div class="menciones col-lg-3">
+                <img src="img/insignia.png">
             </div>
             
             <button class="hamburga navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <hr class="linea linea-lg"></hr>
+            </br>
             <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="menu-ul navbar-nav">
+                    <li class="nav-item logo-en-nav">
+                        <a class="nav-link" href="#"><img src="img/logo2.png"></a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
                     </li>
@@ -58,76 +74,99 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONTACTO</a>
                     </li>
+                    <li class="nav-fecha-dire">
+                        <p class="menu-fecha"><i>Febrero 2020</i></p>
+                        <p class="menu-dire">Director: Hugo Bento</p>
+                    </li>
+                    <li class="nav-item nav-redes">
+                        <a href="#"><i class="fab fa-instagram redes-ico"></i></a>
+                        <a href="#"><i class="fab fa-twitter redes-ico"></i></a>
+                        <a href="#"><i class="fab fa-facebook redes-ico"></i></a>
+                    </li>
                 </ul>
                 <form class="">
-                    <p class="menu-fecha">Febrero del año 2020</p>
-                    <input class="menu-boton form-control" type="search" placeholder="Buscar" aria-label="Search">
+                    <!--<input class="menu-boton form-control" type="search" placeholder="Buscar" aria-label="Search">-->
                     <!--<button class="btn btn-outline-success" type="submit">Search</button>-->
                 </form>
-                <div class="menu-redes">
-                    <a href="#"><i class="fab fa-instagram redes-ico"></i></a>
-                    <a href="#"><i class="fab fa-twitter redes-ico"></i></a>
-                    <a href="#"><i class="fab fa-facebook redes-ico"></i></a>
-                </div>
+
             </div>
         </div>
     </nav>
 
-    <section class="noticia">
-            Acá va el cuerpo de la noticia        
+
+    <section class="noticia container">
+        <div class="cuerpo">
+            <p class="seccion">SECCION</p>
+            <h1 class="titulo">Se vende la imponente residencia del fundador de Turdera</h1>
+            <h2 class="subtitulo">La propiedad construida por Riziero Preti fue declarada de “Interés Histórico” por la Provincia de Buenos Aires.</h2>
+            <p class="autor">Por Hugo Bento</p>
+            <img class="img" src="img/img-noti/nota-1.JPG">
+            <p class="nota">Increíblemente, la histórica casona que construyó y fue lugar de residencia de Riziero Preti, fundador de la ciudad de Turdera, fue puesta a la venta. La propiedad ubicada en Avda. 9 de Julio 440, a pocos metros del estadio del club Temperley, fue declarada por ley provincial “Bien de Interés Histórico” en 2008 por el Senado y la Cámara de Diputados de la Provincia de Buenos Aires.
+                </br></br>A pesar de esta pomposa declaratoria, la Provincia le envió a los dueños una notificación de embargo por una deuda tributaria, según nos comentó Eliseo Preti, nieto del fundador de Turdera.
+                </br></br>En la casona vivían hasta hace unos años dos de las hijas del segundo matrimonio de Preti: Maria Asunción, de 94 años, e Inés, de 90, ambas amantes de la música clásica y muy apreciadas en el barrio.
+                </br></br>La residencia es conocida como la “Quinta de los leones” por las esculturas de dos leones de mármol que adornan su entrada. 
+                </br></br>Fue construida por Preti en 1904 sobre un terreno de 8.320 metros cuadrados, con estilo italiano y el aspecto imponente que aún conserva. 
+                </br></br>Su valor histórico está dado porque allí ocurrieron hechos relevantes para el devenir de la ciudad. Por caso, el 30 de enero de 1909 se colocó la piedra fundamental del pueblo, en una ceremonia que contó con la presencia del gobernador Dr. Tomás Martínez.
+                </br></br>Pero con el paso del tiempo, la construcción ha venido sufriendo graves deterioros, siendo el estado deplorable de los techos la muestra más visceral de su decadencia edilicia. 
+                </br></br>“Es un monumento histórico que se está cayendo a pedazos. Estamos rogando que no llueva porque si no tenemos que dormir con paraguas o cambiar las camas de lugar”, indica Eliseo Preti, agregando que “en el último temporal se llovía más adentro que afuera, era infernal. Tomamos el café con leche en la cocina, con los pies en el agua”.
+            </p>
+
+        </div>
     </section>
 
-    <footer class="row">
-        <hr class="linea"></hr>
-        <div class="logof-caja col-lg-6">
-            <img class="logof-img img-fluid" src="img/logo.png" alt="noticiasdelomas">
-            <a class="logof-nombre" href="#">NOTICIAS DE LOMAS</a>
-        </div>
-        <div class="redes-footer col-lg-6">
-            <a href="#"><i class="fab fa-instagram redes-ico-footer"></i></a>
-            <a href="#"><i class="fab fa-twitter redes-ico-footer"></i></a>
-            <a href="#"><i class="fab fa-facebook redes-ico-footer"></i></a>
-        </div>
-        <div class="nav-footer">
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a href="#">INICIO</a> |
-                </li>
-                <li class="list-inline-item">
-                    <a href="#">SOCIEDAD</a> |
-                </li>
-                <li class="list-inline-item">
-                    <a href="#">POLÍTICA</a> |
-                </li>
-                <li class="list-inline-item">
-                    <a href="#">DEPORTES</a> |
-                </li>
-                <li class="list-inline-item">
-                    <a href="#">GASTRONOMÍA</a> |
-                </li>
-                <li class="list-inline-item">
-                    <a href="#">CULTURA</a> |
-                </li>
-                <li class="list-inline-item">
-                    <a href="#">OPINIÓN</a> |
-                </li>
-                <li class="list-inline-item">
-                    <a href="#">HISTORIA REGIONAL</a> |
-                </li>
-                <li class="list-inline-item">
-                    <a href="#">CONTACTO</a>
-                </li>
-            </ul>
-        </div>
-        <hr class="linea"></hr>
-        <div class="copyright">
-            <p> © Copyright | Web designed by Sebastián Coppola</p>
+    <footer class="container-fluid">
+        <div class="row footer">
+            <hr class="linea"></hr>
+            <div class="logof-caja col-lg-6">
+                <img class="logof-img img-fluid" src="img/logo2.png" alt="noticiasdelomas">
+                <a class="logof-nombre" href="#">NOTICIAS DE </br>LOMAS DE ZAMORA</a>
+            </div>
+            <div class="redes-footer col-lg-6">
+                <a href="#"><i class="fab fa-instagram redes-ico-footer"></i></a>
+                <a href="#"><i class="fab fa-twitter redes-ico-footer"></i></a>
+                <a href="#"><i class="fab fa-facebook redes-ico-footer"></i></a>
+            </div>
+            <div class="nav-footer">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#">INICIO</a> |
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">SOCIEDAD</a> |
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">POLÍTICA</a> |
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">DEPORTES</a> |
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">GASTRONOMÍA</a> |
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">CULTURA</a> |
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">OPINIÓN</a> |
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">HISTORIA REGIONAL</a> |
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="linea"></hr>
+            <div class="copyright">
+                <p> © Copyright | Web designed by Sebastián Coppola</p>
+            </div>
         </div>
     </footer>
 
 
-
-
+    <!--JS-->
+    <script src="js/index.js"></script>
     <!-- jquery -->
     <script src="integrar-bp/js/jquery-3.6.0.min.js"></script>
     <!-- popper -->
