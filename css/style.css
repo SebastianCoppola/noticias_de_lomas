@@ -52,9 +52,7 @@ a{
         position: absolute;
         top:40px;
         right:30px;
-        
         width: 50px;
-
     }
     .hamburga span{
         font-size: .8em;
@@ -72,11 +70,17 @@ a{
     .logo-en-nav{
         display: none;
     }
-
-    .nav-fecha-dire-redes{
-        margin-top: 50px;
+    .nav-fecha-dire{
+        margin-top: 35px;
+    }
+    .nav-redes{
+        margin-top: 20x;
         margin-bottom: 20px;
         text-align: center;
+    }
+    .nav-redes i:hover{
+        opacity: .5;
+        transition: 1s;
     }
     .redes-ico{
         font-size: 1.6em;
@@ -86,10 +90,6 @@ a{
         border-radius: 150px;
         border: 1px solid #fff;
         padding: 5px;
-    }
-    .redes-ico:hover{
-        font-size: 2.2em;
-        transition: 1s;
     }
     /* NOTIS */
     .noticias{
@@ -171,15 +171,16 @@ a{
         align-items: center;
         margin-bottom: 60px;
         margin-top: 30px;
+
     }
     .logof-img{
-        max-width: 60px;
+        max-width: 80px;
     }
     .logof-nombre{
         margin: 0 0 0 10px;
         text-decoration: none;
-        color: black;
-        font-size: 1.6em;
+        color:#216087;
+        font-size: 1.5em;
         font-weight: 700;
     }
     .logof-nombre:hover{
@@ -208,13 +209,14 @@ a{
     .nav-footer{
         margin-top: 30px;
         margin-bottom: 30px;
-        font-size: 1em;
+        font-size: .9em;
         color: #216087;
         text-align: center;
     }
     .nav-footer a{
         text-decoration: none;
         color: #216087;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     .nav-footer a:hover{
         opacity: 0.8;
@@ -301,9 +303,10 @@ a{
     .menu{
         position:absolute;
         top: 195px;
-        left: 100px;
-        right: 100px;
-        margin: auto;     
+        left: 0;
+        right: 0;
+        margin: auto;  
+        width: 90%;   
     }
     .menu-ul{
         width: 100%;
@@ -323,7 +326,7 @@ a{
         transition: 1s;
     }
     .redes-ico{
-        font-size: 1.5em;
+        font-size: 130%;
         margin: 0px 5px 12px 5px;
         color: #216087;
         background-color: #fff;
@@ -344,8 +347,8 @@ a{
         z-index: 1; 
         padding-top: 20px;
         padding-bottom: 20px;
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .logo-en-nav{
         width: 60px;
@@ -601,12 +604,13 @@ a{
         }
     .nav-footer{
         text-align: center;
-        font-size: 1em;
+        font-size: .9em;
         color: #216087;
         margin-top: 30px;
         margin-bottom: 30px;
     }
         .nav-footer a{
+            font-family: Arial, Helvetica, sans-serif !important;
             text-decoration: none;
             color: #216087;
         }
