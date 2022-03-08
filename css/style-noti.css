@@ -109,16 +109,15 @@ a{
     }
     .titulo{
         margin-top: 20px;
-        font-size: 2.5em;
+        font-size: 2em;
         font-weight: 700;
-        
 
     }
     .subtitulo{
         margin-top: 20px;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 2em;
-        text-align: justify;
+        font-size: 1.5em;
+        text-align:;
     }
     .autor{
         margin-top: 20px;;
@@ -131,7 +130,7 @@ a{
     .nota{
         margin-top: 30px;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 1.7em;
+        font-size: 1.4em;
         text-align: justify;
     }
 
