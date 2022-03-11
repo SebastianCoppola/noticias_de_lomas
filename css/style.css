@@ -376,7 +376,7 @@ a{
         /* NOTIS */
         .noticias{
             width: 80%;
-            padding-top: 20px;
+            padding-top: 15px;
             padding-bottom: 50px;
             margin: auto;
             display: grid;
@@ -471,6 +471,7 @@ a{
             border-top: #216087 1px solid;
             border-bottom: #216087 1px solid;
             background-color: #dfe7ec;
+            text-align: start;
         }
         .noti-1 .noti-texto h2{
             font-size: 2em;
@@ -522,6 +523,7 @@ a{
             height: 45%;
             padding: 10px 0 0 10px;
             border-bottom: #216087 1px solid;
+            text-align: start;
         }
         .noti-2 h2, .noti-3 h2,
         .noti-5 h2, .noti-6 h2, 
@@ -565,6 +567,7 @@ a{
             height: 40%;
             padding: 10px 0 0 10px;
             border-bottom: #216087 1px solid;
+            text-align: start;
         }
         .noti-4 .noti-texto h2{
             font-size: 1.4em;
@@ -805,7 +808,7 @@ a{
     /* NOTIS */
     .noticias{
         width: 75%;
-        margin: 20px auto;
+        margin: 0px auto;
         margin-bottom: 50px;
         display: grid;
         grid-template-columns: 35% 35% 30%;
@@ -898,6 +901,7 @@ a{
         border-top: #216087 1px solid;
         border-bottom: #216087 1px solid;
         background-color: #dfe7ec;
+        text-align: start;
     }
     .noti-1 .noti-texto h2{
         font-size: 2em;
@@ -949,6 +953,7 @@ a{
         height: 45%;
         padding: 10px 0 0 10px;
         border-bottom: #216087 1px solid;
+        text-align: start;
     }
     .noti-2 h2, .noti-3 h2,
     .noti-5 h2, .noti-6 h2, 
@@ -992,6 +997,7 @@ a{
         height: 40%;
         padding: 10px 0 0 10px;
         border-bottom: #216087 1px solid;
+        text-align: start;
     }
     .noti-4 .noti-texto h2{
         font-size: 1.4em;
