@@ -59,7 +59,7 @@ const parrafo28 = document.querySelector(".parrafo28");
 const parrafo29 = document.querySelector(".parrafo29");
 const parrafo30 = document.querySelector(".parrafo30");
 
-fetch('./noticias/nota-2.json')
+fetch('./noticias/nota-1.json')
     .then(res => res.json())
     .then(res => {
         seccion.innerHTML = res.seccion

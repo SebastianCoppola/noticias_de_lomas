@@ -20,31 +20,39 @@ a{
         background-color: #216087;
     }
     .logo{
-        margin: 10px 10px 10px 0px;
+        margin: 10px 10px 10px 10px;
         display: flex;
         align-items: center;
+    }
+    .logo-a{
+        text-decoration: none;
     }
     .logo-img{
         max-width: 70px;
     }
-    .logo-nombre-1{
-        margin: 0 0 0 5px;
-        font-size: 1.7em;
-        font-weight: 600;
-        color: #fff;
-    }
-    .logo-nombre-2{
-        margin: 0 0 0 5px;
-        font-size: 1.2em;
-        font-weight: 500;
-        color: #fff;
+    .logo-nombre{
+        display: none;
     }
     .logo-subt{
         display: none;
     }
+    .logo-nombre-peque-1{
+        margin: 0 0 0 20px;
+        font-size: 1.8em;
+        font-weight: 500;
+        color: #fff;
+    }
+    .logo-nombre-peque-2{
+        margin: 0 0 0 20px;
+        font-size: 1.3em;
+        font-weight: 500;
+        color: #fff;
+    }
     .hamburga{
         position: absolute;
-        right: 3%;
+        top:40px;
+        right:30px;
+        width: 50px;
     }
     .hamburga span{
         font-size: .8em;
@@ -228,15 +236,16 @@ a{
     /* HEADER & NAV */
     .navbar{
         width: 100%;
-        height: 280px;
+        height: 230px;
         background-color: #216087;
         margin: 0;
         padding: 0;
+        
     }
     .header{
         position:relative;
         width: 80vw;
-        height: 280px;
+        height: 230px;
         background-color: #216087;
         margin-top:0px;
         margin-right: 0;
@@ -244,64 +253,46 @@ a{
         margin: auto;
     }
     .fecha-dire{
-        background-color: #f9fdff;
-        color: black;
         position: absolute;
-        top:0px;
-        text-align: start;
-        padding: 2px 14% 2px 14%;
-        z-index:1000;
-
-    }
-    .fecha-dire span{
-        margin: 0px 15px 0px 15px;
-        color: #216087;
+        top:60px;
+        text-align: center;
+        margin: 0 0 0 0;
     }
     .fecha-dire p{
-        display: inline;
-        color: #216087;
+        color: #fff;
         padding: 0;
         margin:0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     .logo{
         position: absolute;
-        top:70px;
-        left: 33%;
+        top:30px;
+        left: 0;
+        right: 0;
+        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .logo-img{
-        max-width: 120px;
+        max-width: 100px;
+    }
+    .logo-nombre-peque-1, .logo-nombre-peque-2{
+        display:none;
     }
     .logo-nombre{
-        margin: 0 0 0 15px;
-    }
-    .logo-nombre-1{
-        margin: 0 0 0 0;
-        font-size: 2.5em;
-        font-weight: 600;
+        margin: 30px 0 0 10px;
+        font-size: 1.8em;
         color: #fff;
-        text-align: justify;
-    }
-    .logo-nombre-2{
-        margin: 0 0 0 0;
-        font-size: 1.7em;
-        font-weight: 500;
-        color: #fff;
-        text-align: justify;
     }
     .logo-subt{
-        margin: 16px 0 0 0;
         font-size: 1em;
-        font-style: ;
         color:#fff;
-        text-align: ;
+        text-align: end;
+        padding-right: 40px;
     }
     .menciones{
         position: absolute;
-        top:28px;
+        top:0;
         right:0;
         margin: auto;
         text-align: center;
@@ -311,7 +302,7 @@ a{
     }
     .menu{
         position:absolute;
-        top: 245px;
+        top: 195px;
         left: 0;
         right: 0;
         margin: auto;  
