@@ -37,3 +37,14 @@ for(n = 1; n < 20; n++) {
 }
 
 
+//A QUE NOTA VOY
+
+const $nodo = document.querySelectorAll(".noti");
+// iteras y entregas el índice como argumento
+$nodo.forEach((nodo, index) => {
+    // asignas a cada instancia de tu lista el evento
+    nodo.addEventListener("click", function (e) {
+        // aquí manipulas el índice del elemento en el arreglo
+        localStorage.setItem("noticias",index+1);
+    });
+});
