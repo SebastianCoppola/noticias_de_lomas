@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias de Lomas - Contacto</title>
+    <link rel="icon" href="img/logo.png">
+
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="integrar-bp/css/bootstrap.min.css">
@@ -88,9 +90,33 @@
     </nav>
 
     <section class="contacto">
-        <p>
-            Aquí PROXIMAMENTE CONTACTO
-        </p>
+        <div class="contacto-left">
+            <h2 class=""> Te invitamos a contactarte con nosotros para enviarnos información y opiniones.</h2>
+            <p><b>E-mail:</b> noticiaslomas@yahoo.com.ar</p>  
+            <p><b>Sitio web:</b> www.noticiasdelomas.com.ar</p>
+            <div class="contacto-form">
+                <form action="enviar.php" method="post" class="">
+                    <input class="input" type="text" name="nombre" placeholder="NOMBRE" required>
+                    <input class="input" type="text" name="correo" placeholder="EMAIL" required>
+                    <input class="input" type="text" name="telefono" placeholder="TELEFONO" required>
+                    <textarea class="input" name="mensaje" placeholder="MENSAJE" required></textarea>
+                    <input class="enviar" type="submit" value="ENVIAR" id="form-enviar">
+                </form>
+            </div> 
+        </div>
+        <div class="contacto-right">
+            <p>PERIÓDICO ONLINE DE INFORMACIÓN REGIONAL</p>
+            <p>Premio Internacional de Periodismo, a nivel de Latinoamérica, otorgado mediante concurso por la Fundación Givré de Buenos Aires, siendo Presidente el Dr. Alfredo Givré y Presidente de Honor, Jorge Luis Borges.</p>
+            <hr class="linea"></hr>
+            <p>Premio “Caduceo” en el rubro “Mejor Suplemento Histórico” de la Provincia de Buenos Aires otorgado por el Consejo Profesional de Ciencias Económicas bonaerense.</p>
+            <hr class="linea"></hr>
+            <p>Reconocimiento del Centro Cultural Enrique Santos Discépolo – Universidad Nacional de Lomas de Zamora por su “aporte a la cultura popular”.</p>
+            <hr class="linea"></hr>
+            <p>Distinción CODICOS (Comisión Diocesana para las Comunicaciones Sociales), otorgada en la Catedral Nuestra Señora de la Paz por el Obispo de Lomas de Zamora Mñor. Jorge Lugones y el Pbro. Daniel Bossio por su “destacada labor social”.</p>
+            <hr class="linea"></hr>
+            <p>Publicó los libros “Los Andes Mil Historias Mil Rayitas”, “Lomas de Zamora 150 años” (Historias de vida e historias debidas), co-autor del libro “Hitos y Mitos de la Historia de Lomas de Zamora” y autor del libro “Encantado de seducirte” (La seducción fácil y los amores difíciles).</p>
+        </div> 
+        
     </section>
 
     <footer class="container-fluid">

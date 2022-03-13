@@ -83,80 +83,10 @@ a{
         border: 1px solid #fff;
         padding: 5px;
     }
-    /* CONTACTO */
-    .contacto{
-        width: 80%;
-        padding: 50px 0px 50px 0px;
-        margin: auto;
-    }
-    .contacto-left{
-        padding: 0 0 0 0;
-    }
-    .contacto-left h2{
-        font-size: 1.8em;
-        font-weight: 600;
-        margin-bottom: 30px;
-    }
-    .contacto-left p{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: .8em;
-    }
-    .contacto-form{
-        margin-top: 30px;
-    }
-    form{
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        background-color: #216087;
-        box-shadow: -1px 0px 5px black;
-    }
-    .input{
-        display: block;
-        margin: 10px;
-        padding: 5px;
-        background-color: #216087;
-        border: none;
-        border-bottom: #f9fdff solid 1px;
-        color: #fff;
-    }
-    .input::placeholder{
-        color:#fff;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: .7em;
-    }
-    .enviar{
-        width: 50%;
-        margin: auto;
-        border: none;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        padding: 5px;
-        font-size: .8em;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #216087;
-    }
-    .contacto-right{
-        background-color: #c7cccf;
-        margin-top: 30px;
-        padding: 15px 15px 15px 15px;
-    }
-    .contacto-right p{
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: .8em;
-        font-style: italic;
-        color:#216087;
-    }
-    .contacto-right p:first-child{
-        font-style: normal ;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-weight: 500;
-        font-size: 1em;
-        letter-spacing: 4px;
-        text-align: center;
-    }
+    /* NOTIS */
+
+
+    
     /* FOOTER */
     footer{
         padding: 30px 10px 10px 10px;
@@ -374,83 +304,12 @@ a{
         .logo-en-nav.active{
             display:inline;
         }
-        /* CONTACTO */
-        .contacto{
-            width: 80%;
-            padding: 50px 0px 50px 0px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        .contacto-left{
-            grid-column: 1/3;
-            padding: 0 15% 0 15%;
-        }
-        .contacto-left h2{
-            font-size: 2em;
-            font-weight: 600;
-            margin-bottom: 40px;
-        }
-        .contacto-left p{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: .8em;
-        }
-        .contacto-form{
-            margin-top: 40px;
-        }
-        form{
-            display: flex;
-            flex-direction: column;
-            padding: 30px;
-            background-color: #216087;
-            box-shadow: -1px 0px 2px black;
-        }
-        .input{
-            display: block;
-            margin: 10px;
-            padding: 5px;
-            background-color: #216087;
-            border: none;
-            border-bottom: #f9fdff solid 1px;
-            color: #fff;
-        }
-        .input::placeholder{
-            color:#fff;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: .7em;
-        }
-        .enviar{
-            width: 50%;
-            margin: auto;
-            border: none;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            padding: 5px;
-            font-size: .8em;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #216087;
-        }
-        .contacto-right{
-            grid-column: 3/4;
-            background-color: #c7cccf;
-            padding: 0 15px 0 15px;
-        }
-        .contacto-right p{
-            text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: .8em;
-            font-style: italic;
-            color:#216087;
-        }
-        .contacto-right p:first-child{
-            font-style: normal ;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            font-weight: 500;
-            font-size: 1em;
-            letter-spacing: 4px;
-            text-align: center;
-        }    
+        /* NOTIS */
+        
+        
+    
+        
+    
         /* FOOTER */
         footer{
             padding: 30px 80px 20px 80px;
@@ -672,83 +531,12 @@ a{
     .logo-en-nav.active{
         display:inline;
     }
-    /* CONTACTO */
-    .contacto{
-        width: 80%;
-        padding: 50px 0px 50px 0px;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .contacto-left{
-        grid-column: 1/3;
-        padding: 0 15% 0 15%;
-    }
-    .contacto-left h2{
-        font-size: 2em;
-        font-weight: 600;
-        margin-bottom: 40px;
-    }
-    .contacto-left p{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: .8em;
-    }
-    .contacto-form{
-        margin-top: 40px;
-    }
-    form{
-        display: flex;
-        flex-direction: column;
-        padding: 30px;
-        background-color: #216087;
-        box-shadow: -1px 0px 2px black;
-    }
-    .input{
-        display: block;
-        margin: 10px;
-        padding: 5px;
-        background-color: #216087;
-        border: none;
-        border-bottom: #f9fdff solid 1px;
-        color: #fff;
-    }
-    .input::placeholder{
-        color:#fff;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: .7em;
-    }
-    .enviar{
-        width: 50%;
-        margin: auto;
-        border: none;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        padding: 5px;
-        font-size: .8em;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #216087;
-    }
-    .contacto-right{
-        grid-column: 3/4;
-        background-color: #c7cccf;
-        padding: 0 15px 0 15px;
-    }
-    .contacto-right p{
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: .8em;
-        font-style: italic;
-        color:#216087;
-    }
-    .contacto-right p:first-child{
-        font-style: normal ;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-weight: 500;
-        font-size: 1em;
-        letter-spacing: 4px;
-        text-align: center;
-    }
+    /* NOTIS */
+
+
+
+
+
     /* FOOTER */
     footer{
         padding: 30px 80px 20px 80px;
@@ -835,7 +623,3 @@ a{
         margin-top: 30px;
     }
 }
-
-
-
-
