@@ -1,3 +1,17 @@
+//FILE EXISTS
+function checkFileExist(urlToFile){
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD',urlToFile,false);
+    /*xhr.send();*/
+
+    if(xhr.status == "404"){
+        return false;
+    } else {
+        return true;
+    }
+}
+
+
 // MENU SCROLL
 const menu = document.querySelector('.menu');
 const logoEnNav = document.querySelector('.logo-en-nav');
@@ -107,6 +121,7 @@ fetch(`./noticias/nota-${index}.json`)
         parrafo30.innerHTML = res.parrafo30
     })
 
+
 //A QUE SECCION VOY NAV
 const $seccionNav = document.querySelectorAll(".seccion-nav");
 // iteras y entregas el índice como argumento
@@ -155,3 +170,6 @@ $seccionFoot.forEach((seccionFoot, index) => {
         }
     });
 });
+
+
+

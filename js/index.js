@@ -15,44 +15,49 @@ fetch('./fecha/fecha.json')
         fecha.innerHTML = res.fecha;
     });
 
-//CARGAR AUTOR NOTA 1
-
 
 //CARGAR NOTAS
-for(n = 1; n < 20; n++) {
-    
-    const seccion = document.querySelector(`.seccion-${n}`);
-    const titulo = document.querySelector(`.titulo-${n}`);
-    const subtitulo = document.querySelector(`.subtitulo-${n}`);
-    const autor = document.querySelector(`.autor-${n}`);
-    
-    fetch(`./noticias/nota-${n}.json`)
+const noticias = document.querySelector(".noticias")
+for( n=1 ; n <= 20 ; n++) {
+    fetch(`noticias/nota-${n}.json`)
         .then(res => res.json())
         .then(res => {
-            seccion.innerHTML = res.seccion
-            titulo.innerHTML = res.titulo
-            subtitulo.innerHTML = res.subtitulo
-            autor.innerHTML = res.autor
-        });
+            
+                const caja = document.createElement("div");
+                caja.setAttribute("class",`noti noti-${res.notaNumero}`);
+                caja.setAttribute("id",res.notaNumero);
+                noticias.appendChild(caja); 
+                    caja.innerHTML = 
+                    `<a href="noticia.html">
+                        <div class="noti-img">
+                            <img src="noticias/nota-${res.notaNumero}-cover.jpg" class="">
+                            <h4 class="seccion-2">${res.seccion}</h4>
+                        </div>
+                        <div class="noti-texto">
+                            <h2 class="titulo-2">${res.titulo}</h2>
+                            <h3 class="subtitulo-2">${res.subtitulo}</h3>
+                        </div>
+                    </a>`;
+        })
 }
 
-
 //A QUE NOTA VOY
-const $noticia = document.querySelectorAll(".noti");
-// iteras y entregas el índice como argumento
-$noticia.forEach((noticia, index) => {
-    // asignas a cada instancia de tu lista el evento
-    noticia.addEventListener("click", function (e) {
-        // aquí manipulas el índice del elemento en el arreglo
-        localStorage.setItem("noticias",index+1);
+setTimeout(function(){
+    const $notas = document.querySelectorAll(".noti");
+    //Almaceno CANTIDAD DE NOTAS
+    localStorage.setItem("cantidadDeNotas",$notas.length)
+    //Activo links a cada nota
+    $notas.forEach((noticia) => {
+        noticia.addEventListener("click", function (e) {
+            localStorage.setItem("noticias",noticia.id);
+        })
     });
-});
-
+}, 1000);
 
 //A QUE SECCION VOY NAV
-const $seccionNav = document.querySelectorAll(".seccion-nav");
+const seccionNav = document.querySelectorAll(".seccion-nav");
 // iteras y entregas el índice como argumento
-$seccionNav.forEach((seccionNav, index) => {
+seccionNav.forEach((seccionNav, index) => {
     // asignas a cada instancia de tu lista el evento
     seccionNav.addEventListener("click", function (e) {
         // aquí manipulas el índice del elemento en el arreglo
@@ -73,10 +78,11 @@ $seccionNav.forEach((seccionNav, index) => {
         }
     });
 });
+
 //A QUE SECCION VOY FOOTER
-const $seccionFoot = document.querySelectorAll(".seccion-footer");
+const seccionFoot = document.querySelectorAll(".seccion-footer");
 // iteras y entregas el índice como argumento
-$seccionFoot.forEach((seccionFoot, index) => {
+seccionFoot.forEach((seccionFoot, index) => {
     // asignas a cada instancia de tu lista el evento
     seccionFoot.addEventListener("click", function (e) {
         // aquí manipulas el índice del elemento en el arreglo
