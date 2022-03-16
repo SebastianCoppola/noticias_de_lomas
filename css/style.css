@@ -377,7 +377,7 @@ a{
         .noticias{
             width: 80%;
             padding-top: 15px;
-            padding-bottom: 50px;
+            padding-bottom: 0px;
             margin: auto;
             display: grid;
             grid-template-columns: 35% 35% 30%;
@@ -431,7 +431,7 @@ a{
     
         .avisos{
             grid-column:3/4;
-            grid-row:2/30;
+            grid-row:2/10;
             padding: 15px;
             text-align: center;
         }
@@ -808,7 +808,7 @@ a{
     .noticias{
         width: 75%;
         margin: 0px auto;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
         display: grid;
         grid-template-columns: 3fr 3fr 2fr;
         gap: 1fr;
@@ -861,7 +861,7 @@ a{
 
     .avisos{
         grid-column:3/4;
-        grid-row:2/30;
+        grid-row:2/10;
         padding: 15px;
         text-align: center;
     }

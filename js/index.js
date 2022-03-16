@@ -18,34 +18,45 @@ fetch('./fecha/fecha.json')
 
 //CARGAR NOTAS
 const noticias = document.querySelector(".noticias")
-for( n=1 ; n <= 20 ; n++) {
-    fetch(`noticias/nota-${n}.json`)
-        .then(res => res.json())
-        .then(res => {
-            
-                const caja = document.createElement("div");
-                caja.setAttribute("class",`noti noti-${res.notaNumero}`);
-                caja.setAttribute("id",res.notaNumero);
-                noticias.appendChild(caja); 
-                    caja.innerHTML = 
-                    `<a href="noticia.html">
-                        <div class="noti-img">
-                            <img src="noticias/nota-${res.notaNumero}-cover.jpg" class="">
-                            <h4 class="seccion-2">${res.seccion}</h4>
-                        </div>
-                        <div class="noti-texto">
-                            <h2 class="titulo-2">${res.titulo}</h2>
-                            <h3 class="subtitulo-2">${res.subtitulo}</h3>
-                        </div>
-                    </a>`;
-        })
-}
+//CHEQUEAR CANTIDAD DE NOTAS
+var req = new XMLHttpRequest(); 
+req.onload = function() {
+    const contarPhp = this.responseText; 
+    //CARGAR NOTAS
+    for( n=1 ; n <= contarPhp ; n++) {
+        fetch(`noticias/nota-${n}.json`)
+            .then(res => res.json())
+            .then(res => {
+                    var caja = document.querySelector(`.noti-${res.notaNumero}`) 
+                    caja.setAttribute("id",res.notaNumero);
+                        caja.innerHTML = 
+                        `<a href="noticia.html">
+                            <div class="noti-img">
+                                <img src="noticias/nota-${res.notaNumero}-cover.jpg" class="">
+                                <h4 class="seccion-2">${res.seccion}</h4>
+                            </div>
+                            <div class="noti-texto">
+                                <h2 class="titulo-2">${res.titulo}</h2>
+                                <h3 class="subtitulo-2">${res.subtitulo}</h3>
+                            </div>
+                        </a>`;
+            })
+    }
+};
+req.open("get", "contar.php", true); 
+req.send();
 
 //A QUE NOTA VOY
 setTimeout(function(){
     const $notas = document.querySelectorAll(".noti");
     //Almaceno CANTIDAD DE NOTAS
     localStorage.setItem("cantidadDeNotas",$notas.length)
+    //Elimino notas vacias
+    for ( h = 0 ; h < $notas.length ; h++){
+        if(($notas[h].innerHTML) == ""){
+            $notas[h].style.display="none";
+        }
+    }
     //Activo links a cada nota
     $notas.forEach((noticia) => {
         noticia.addEventListener("click", function (e) {
